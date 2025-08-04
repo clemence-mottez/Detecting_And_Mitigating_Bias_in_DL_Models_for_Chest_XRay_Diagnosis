@@ -18,7 +18,9 @@ conda activate mitigate-bias
 ```
 
 ## How to use our code
-
+- Bias Detection folder contains notebooks to inspect the bias and determine where does it come from
+- CNN from scratch folder contains python scripts to train our own DenseNet121 from scratch as well as scripts to extract disease predictions and image embeddings
+- XGBoost Bias Mitigation contains notebook to retrain the head of the CNN with a XGBoost classifier as well as a notebook to combine Active Learning with the XGBoost head retraining
 
 ## Labels in the data
   
