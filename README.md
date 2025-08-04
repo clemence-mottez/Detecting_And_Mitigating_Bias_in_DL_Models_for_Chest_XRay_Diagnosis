@@ -1,9 +1,10 @@
-# Detecting_And_Mitigating_Bias_in_DL_Models_for_Chest_XRay_Diagnosis
+# From Detection to Mitigation: Addressing Bias in Deep Learning Models for Chest X-Ray Diagnosis
+Paper in review by Pacific Symposium on Biocomputing (PSB) 2026  
 
 ## Overview
-This project aims to detect and mitigate bias in Deep Learning models for Chest X-Ray Diagnosis
+Deep learning models have shown promise in improving diagnostic accuracy from chest X-rays, but they also risk perpetuating healthcare disparities when performance varies across demographic groups. In this work, we present a comprehensive bias detection and mitigation framework targeting sex, age, and race-based disparities when performing diagnostic tasks with chest X-rays. We extend a recent CNN–XGBoost pipeline to support multi-label classification and evaluate its performance across four medical conditions. We show that replacing the final layer of CNN with an eXtreme Gradient Boosting classifier improves the fairness of the subgroup while maintaining or improving the overall predictive performance. To validate its generalizability, we apply the method to different backbones, namely DenseNet-121 and ResNet-50, and achieve similarly strong performance and fairness outcomes, confirming its model-agnostic design. We further compare this lightweight adapter training method with traditional full-model training bias mitigation techniques, including adversarial training, reweighting, data augmentation, and active learning, and find that our approach offers competitive or superior bias reduction at a fraction of the computational cost. Finally, we show that combining eXtreme Gradient Boosting retraining with active learning yields the largest reduction in bias across all demographic subgroups, both in and out of distribution on the CheXpert and MIMIC datasets, establishing a practical and effective path toward equitable deep learning deployment in clinical radiology.
 
-## Creating a Conda Environment
+## Conda Environment
 
 To create a Conda environment for this project, run the following command in your terminal:
 
@@ -15,6 +16,9 @@ To open the environment, run the following command in your terminal:
 ```bash
 conda activate mitigate-bias
 ```
+
+## How to use our code
+
 
 ## Labels in the data
   
